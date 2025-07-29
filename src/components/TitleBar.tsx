@@ -50,28 +50,28 @@ export default function TitleBar({ className }: TitleBarProps) {
           onClick={toggleTheme}
           size="icon"
           variant="ghost"
-          className="hover:bg-accent/50 no-drag h-6 w-6 transition-colors"
+          className="hover:bg-accent/50 no-drag h-7 w-7 p-1 transition-colors"
         >
-          <Moon size={16} className="text-muted-foreground" />
+          <Moon className="text-muted-foreground h-4 w-4" />
         </Button>
 
         {/* Settings Button */}
         <Button
           variant="ghost"
           size="icon"
-          className="hover:bg-accent/50 no-drag h-6 w-6 transition-colors"
+          className="hover:bg-accent/50 no-drag h-7 w-7 p-1 transition-colors"
           onClick={handleSettings}
         >
-          <Settings size={16} className="text-muted-foreground" />
+          <Settings className="text-muted-foreground h-4 w-4" />
         </Button>
 
         {/* Window Controls - Only show on Windows and Linux */}
         {!isMac && (
-          <div className="no-drag ml-2 flex items-center gap-1">
+          <div className="no-drag ml-2 flex h-full items-center gap-0.5">
             <Button
               variant="ghost"
               size="icon"
-              className="hover:bg-accent/50 h-6 w-6 transition-colors"
+              className="hover:bg-accent/50 h-7 w-9 rounded-none transition-colors"
               onClick={minimizeWindow}
             >
               <Minus size={12} className="text-muted-foreground" />
@@ -82,15 +82,15 @@ export default function TitleBar({ className }: TitleBarProps) {
               className="hover:bg-accent/50 h-6 w-6 transition-colors"
               onClick={maximizeWindow}
             >
-              <Square size={12} className="text-muted-foreground" />
+              <Square className="text-muted-foreground h-3 w-3" />
             </Button>
             <Button
               variant="ghost"
               size="icon"
-              className="hover:bg-destructive hover:text-destructive-foreground h-6 w-6 transition-colors"
+              className="hover:bg-destructive hover:text-destructive-foreground h-7 w-9 rounded-none transition-colors"
               onClick={closeWindow}
             >
-              <X size={12} />
+              <X className="h-3 w-3" />
             </Button>
           </div>
         )}
