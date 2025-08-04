@@ -37,7 +37,7 @@
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
+    "@types/react-dom": "^19.1.7",
     "electron": "^37.2.4",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.2",
